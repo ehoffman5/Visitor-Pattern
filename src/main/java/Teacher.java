@@ -1,11 +1,11 @@
-// This class sets up the properties of a visitable student
+// This class sets up the properties of a visitable teacher
 
-public class Student implements Visitable {
+public class Teacher implements Visitable {
 
     private String name;
     private String healthStatus;
 
-    public Student(String name) { // name passes as a parameter
+    public Teacher(String name) { // name passes as a parameter
         super();
         this.name = name;
     }
@@ -26,7 +26,7 @@ public class Student implements Visitable {
         this.healthStatus = healthStatus;
     }
 
-    // Method accepts a visitor to visit the student
+    // Method accepts a visitor to visit the teacher
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
