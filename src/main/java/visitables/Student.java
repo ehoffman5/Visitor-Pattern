@@ -8,12 +8,12 @@ public class Student implements Visitable {
     private String name;
     private String healthStatus;
 
-    public Student(String name) { // name passes as a parameter
-        super();
+    public Student(String name, String healthStatus) {
         this.name = name;
+        this.healthStatus = healthStatus;
     }
 
-    // getters and setters
+    // getter methods
     public String getName()
     {
         return name;
@@ -24,10 +24,6 @@ public class Student implements Visitable {
         return healthStatus;
     }
 
-    public void setHealthStatus( String healthStatus )
-    {
-        this.healthStatus = healthStatus;
-    }
 
     // Method accepts a visitor to visit the student
     public void accept(Visitor visitor) {

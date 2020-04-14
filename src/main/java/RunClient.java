@@ -11,10 +11,10 @@ public class RunClient {
         ArrayList<Student> studentList = new ArrayList<Student>();
 
         // declare students that may attend the school
-        Student johnny = new Student("Johnny");
-        Student ronny = new Student("Ronny");
-        Student lonny = new Student("Lonny");
-        Student bonny = new Student("Bonny");
+        Student johnny = new Student("Johnny", "Poor");
+        Student ronny = new Student("Ronny", "Fair");
+        Student lonny = new Student("Lonny", "Good");
+        Student bonny = new Student("Bonny", "Excellent");
 
         // add students to list
         studentList.add(johnny);
@@ -25,10 +25,10 @@ public class RunClient {
         ArrayList<Teacher> teacherList = new ArrayList<Teacher>();
 
         // declare teachers that may teach at the school
-        Teacher mrHoward = new Teacher("Mr. Howard");
-        Teacher mrFine = new Teacher("Mr. Fine");
-        Teacher msHepburn = new Teacher("Ms. Hepburn");
-        Teacher msDavis = new Teacher("Ms. Davis");
+        Teacher mrHoward = new Teacher("Mr. Howard", "Good");
+        Teacher mrFine = new Teacher("Mr. Fine", "Fair");
+        Teacher msHepburn = new Teacher("Ms. Hepburn", "Excellent");
+        Teacher msDavis = new Teacher("Ms. Davis", "Poor");
 
         // add teachers to list
         teacherList.add(mrHoward);
