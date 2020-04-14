@@ -1,2 +1,4 @@
-public class Visitable {
+public interface Visitable
+{
+    public void accept(Visitor visitor);
 }
