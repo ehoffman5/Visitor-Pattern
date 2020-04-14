@@ -1,4 +1,7 @@
-// This class sets up the properties of a visitable teacher
+package visitables;// This class sets up the properties of a visitable teacher
+
+import interfaces.Visitable;
+import interfaces.Visitor;
 
 public class Teacher implements Visitable {
 

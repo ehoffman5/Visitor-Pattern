@@ -1,4 +1,8 @@
-// This class sets up the properties and the visit methods of the visitor nurse
+package visitors;// This class sets up the properties and the visit methods of the visitor nurse
+
+import interfaces.Visitor;
+import visitables.Student;
+import visitables.Teacher;
 
 public class Nurse implements Visitor {
 

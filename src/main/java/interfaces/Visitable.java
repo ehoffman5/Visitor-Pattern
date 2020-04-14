@@ -1,3 +1,7 @@
+package interfaces;
+
+import visitors.*;
+
 public interface Visitable
 {
     // can add new method declarations if a new visitor is added

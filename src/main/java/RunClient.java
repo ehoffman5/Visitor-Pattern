@@ -1,3 +1,7 @@
+import visitables.Student;
+import visitables.Teacher;
+import visitors.Nurse;
+
 import java.util.ArrayList;
 
 public class RunClient {
@@ -37,14 +41,12 @@ public class RunClient {
         Nurse mrsSmith = new Nurse("Mrs. Smith");
 
         // loop to make all students accept the nurse's visit
-        for(Student student : studentList)
-        {
+        for(Student student : studentList) {
             student.accept(mrsSmith);
         }
 
         // loop to make all teachers accept the nurse's visit
-        for(Teacher teacher : teacherList)
-        {
+        for(Teacher teacher : teacherList) {
             teacher.accept(mrsSmith);
         }
     }
