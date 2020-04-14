@@ -29,18 +29,20 @@ public class RunClient {
         // add teachers to list
         teacherList.add(mrHoward);
         teacherList.add(mrFine);
-        teacherList.add(mrFine);
-        teacherList.add(mrFine);
+        teacherList.add(msHepburn);
+        teacherList.add(msDavis);
 
 
         // declare nurse visitor
         Nurse mrsSmith = new Nurse("Mrs. Smith");
 
+        // loop to make all students accept the nurse's visit
         for(Student student : studentList)
         {
             student.accept(mrsSmith);
         }
 
+        // loop to make all teachers accept the nurse's visit
         for(Teacher teacher : teacherList)
         {
             teacher.accept(mrsSmith);
