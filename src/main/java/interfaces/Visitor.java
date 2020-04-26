@@ -8,6 +8,6 @@ import visitables.*;
 public interface Visitor
 {
     // add new method declaration for each new visitable class
-    public void visit(Student student);
-    public void visit(Teacher teacher);
+    public String visit(Student student);
+    public String visit(Teacher teacher);
 }
